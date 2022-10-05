@@ -1,0 +1,57 @@
+.register-container {
+    display: grid;
+    grid-template-columns: calc(30% - 0.5rem) calc(70% - 0.5rem);
+    column-gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-form {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px
+}
+
+@media screen and (max-width: 600px) {
+    .register-container {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    .register:last-of-type {
+        grid-row: 1/2;
+    }
+    .register:first-child {
+        margin-bottom: 2rem;
+    }
+    .btn-form {
+        display: block;
+    }
+    .btn-form button {
+        width: 100%;
+    }
+}
+
+.register {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: #D3EBCD;
+}
+.register h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.register h2:last-of-type {
+    margin-top: 10px;
+}
+.textField {
+    background-color: white;
+}
+.textField p {
+    background-color: #D3EBCD;
+    padding: 3px 14px;
+    margin: 0;
+}
+
+
+
+
+/* wilder_mayta */

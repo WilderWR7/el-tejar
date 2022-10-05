@@ -1,0 +1,43 @@
+.register {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: #D3EBCD;
+}
+.register h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.register h2:last-of-type {
+    margin-top: 10px;
+}
+.btn-container {
+    display: flex;
+    justify-content: 'space-between';
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.btn {
+    background-color: #617DB1;
+    padding: 0.5rem;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1200px ) {
+    .btn-container {
+        display: block;
+    }
+    .btn {
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 600px ) {
+    .register:first-child {
+        margin-bottom: 2rem;
+    }
+}
