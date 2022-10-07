@@ -16,8 +16,11 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import PaymentsIcon from '@mui/icons-material/Payments';
 import HomeIcon from '@mui/icons-material/Home';
-import { RegisterPlayerScreen } from '../components/adminScreen/register';
 import Link from 'next/link';
+import { Button, Container } from '@mui/material';
+import { CardsPrint } from '../../components/adminScreen/print';
+import { ReactInstance, useRef } from 'react';
+import { useReactToPrint } from 'react-to-print';
  
 const drawerWidth = 240;
 
@@ -35,7 +38,7 @@ const closedMixin = (theme: Theme): CSSObject => ({
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  overflowX: 'hidden', 
+  overflowX: 'hidden',
   width: `calc(${theme.spacing(7)} + 1px)`,
   [theme.breakpoints.up('sm')]: {
     width: `calc(${theme.spacing(8)} + 1px)`,
@@ -89,8 +92,13 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
   }),
 );
-
-export default function MiniDrawer() {
+const ScreenPrint = () => {
+  const print = useRef<ReactInstance>()
+  const handlePrint = useReactToPrint({
+    content: ()=> print.current!,
+    documentTitle: 'wilder',
+    // onAfterPrint: ()=> alert('Print success')
+  })
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -101,7 +109,6 @@ export default function MiniDrawer() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-
   return (
     <Box sx={{ display: 'flex' }}>
       <AppBar position="fixed" open={open} style={{backgroundColor: '#282626'}} >
@@ -159,8 +166,17 @@ export default function MiniDrawer() {
       </Drawer>
       <Box component="main" sx={{ flexGrow: 1}}>
         <DrawerHeader />
-        <RegisterPlayerScreen/>
+        <Container>
+            <Typography marginTop={2} variant='h1'>Credenciales</Typography>
+            <Button color='success' onClick={handlePrint}>Imprimir</Button>
+            <Box ref = {print}>
+              <CardsPrint/>
+            </Box>
+        </Container>
       </Box>
     </Box>
   );
 }
+
+export default ScreenPrint
+

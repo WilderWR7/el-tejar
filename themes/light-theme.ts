@@ -15,7 +15,12 @@ export const lightTheme = createTheme({
         }
     },
     direction: 'ltr',
-
+    typography: {
+        subtitle1:{
+            fontFamily: 'Play'
+        }
+    }
+    ,
     components: {
         MuiLink: {
             defaultProps: {

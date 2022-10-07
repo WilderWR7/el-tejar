@@ -1,0 +1,101 @@
+.header{
+    width: 100%;
+    height: 105px;
+    background: rgba(218, 218, 218, 0.69);
+    border-radius: 5px;
+    position: relative;
+
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(27,27,27,0.514);
+    -moz-box-shadow: 7px 10px 5px 0px rgb(27, 27, 27,0.514);
+    box-shadow: 7px 10px 5px 0px rgba(27, 27, 27, 0.514);
+}
+
+.header-title {
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+.header-lastTitle {
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+.header-img-container {
+    position: absolute;
+    right: 0;
+
+    top: 8px;
+}
+.title {
+font-style: normal;
+font-weight: 700;
+text-align: center;
+display: flex;
+height: 100%;
+position: relative;
+top: -8px;
+flex-direction: column;
+justify-content: center;
+text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+}
+.container-face {
+    position: relative;
+    top: -20px;
+    left: 20px;
+    display: flex;
+}
+.container-face img {
+    border-radius: 5px;
+
+    box-shadow: 7px 10px 5px 0px rgba(27, 27, 27, 0.514);
+}
+
+.face-txt-name {
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+    font-weight: bold;
+    margin-left: 1rem;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+.face-txt {
+    margin-left: 1rem;
+    line-height: 1.4;
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+    line-height: 1.4;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.face-txt-category {
+    text-align: center;
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.data {
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+    font-weight: 100px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+.qr {
+    position: absolute;
+    right: 16px;
+    bottom: 95px;
+}
+.qr h6 {
+    text-shadow: -2px -2px 1px #fff, 2px 2px 1px #fff, -2px 2px 1px #fff, 2px -2px 1px #fff;
+
+}
+.face {
+    height: 125px;
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(27,27,27,0.514);
+    -moz-box-shadow: 7px 10px 5px 0px rgb(27, 27, 27,0.514);
+}
