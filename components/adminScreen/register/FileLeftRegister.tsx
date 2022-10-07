@@ -43,6 +43,7 @@ export const FileLeftRegister:FC<Props> = ({imgCarnet,imgface,selectImage}) => {
                 }}
                 />) : (
                 <img
+                    alt='ww'
                     style={{ maxWidth: "100%", height: "200px" }}
                     src={imgface.url}
                 />
@@ -100,6 +101,7 @@ export const FileLeftRegister:FC<Props> = ({imgCarnet,imgface,selectImage}) => {
                     }}
                 />) : (
                 <img
+                    alt='ww'
                     style={{ maxWidth: "100%", height: "200px" }}
                     src={imgCarnet.url}
                 />

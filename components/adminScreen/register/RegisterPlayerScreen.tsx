@@ -68,7 +68,7 @@ export const RegisterPlayerScreen = () => {
   return (
     <Container maxWidth='xl' >
       <Box display={'flex'} style={{alignItems: 'center',marginTop: '1rem'}} >
-        <Image src='https://upload.wikimedia.org/wikipedia/commons/2/22/Club_the_strongest_escudo_transparent_background_png_700px.png' width={60} height={60} />
+        <Image alt='ww' src='https://upload.wikimedia.org/wikipedia/commons/2/22/Club_the_strongest_escudo_transparent_background_png_700px.png' width={60} height={60} />
         <Typography variant='h1'>Club The Strongest</Typography>
       </Box>
       <Box className={styles['register-container']} >
