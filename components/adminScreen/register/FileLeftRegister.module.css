@@ -18,15 +18,7 @@
     margin-top: 1rem;
 }
 .btn {
-    background-color: #617DB1;
-    padding: 0.5rem;
-    width: 100%;
-    margin: 0 auto;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
+   display: none;
 }
 @media screen and (max-width: 1200px ) {
     .btn-container {
@@ -36,8 +28,33 @@
         margin-top: 1rem;
     }
 }
+.icon-face {
+    display: none;
+}
+
+.web-cam {
+    display: block;
+}
+
 @media screen and (max-width: 600px ) {
     .register:first-child {
         margin-bottom: 2rem;
+    }
+    .icon-face {
+        display: block;
+    }
+    .web-cam {
+        display: none;
+    }
+    .btn {
+        background-color: #617DB1;
+        padding: 0.5rem;
+        width: 100%;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
     }
 }
